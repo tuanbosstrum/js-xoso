@@ -1,5 +1,5 @@
 let container = document.querySelector(".container");
-// let random = document.querySelector(".random");
+let random = document.querySelector(".random");
 let btn = document.getElementById("spin");
 let number = Math.ceil(Math.random() * 1000);
 
