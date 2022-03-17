@@ -20,67 +20,53 @@
     <p id="giainam"></p>
     <p id="giaisau"></p>
     <p id="giaibay"></p>
-    <button onclick="getRdInteger(1,9)">Click me</button>
+    <button onclick="getRdInteger(100,200)">Click me</button>
     <script>
-        function giaithuong(rd, result) {
-            if (rd == result) {
-                {
-                    rd = Math.floor(Math.random() * (max - min)) + min;
-                    return giai(rd, result);
+        function getRdInteger(min, max) {
+            let giaidacbiet = Math.floor(Math.random() * (max - min)) + min;
+            let giainhat = Math.floor(Math.random() * (max - min)) + min;
+            let giainhi = Math.floor(Math.random() * (max - min)) + min;
+            let giaiba = Math.floor(Math.random() * (max - min)) + min;
+            let giaitu = Math.floor(Math.random() * (max - min)) + min;
+            let giainam = Math.floor(Math.random() * (max - min)) + min;
+            let giaisau = Math.floor(Math.random() * (max - min)) + min;
+            let giaibay = Math.floor(Math.random() * (max - min)) + min;
+
+            let result = [giaidacbiet, giainhat, giainhi, giaiba, giaitu, giainam, giaisau, giaibay];
+            for (let i = 0; i < result.length; i++) {
+                let rd = Math.floor(Math.random() * (max - min)) + min;
+                switch (rd) {
+                    case giaidacbiet:
+                        document.getElementById("giaidacbiet").innerHTML = "giai dac biet " + giaidacbiet;
+                        break;
+                    case giainhat:
+                        document.getElementById("giainhat").innerHTML = "giai nhat " + giainhat;
+                        break;
+                    case giainhi:
+                        document.getElementById("giainhi").innerHTML = "giai nhi " + giainhi;
+                        break;
+                    case giaiba:
+                        document.getElementById("giaiba").innerHTML = "giai ba " + giaiba;
+                        break;
+                    case giaitu:
+                        document.getElementById("giaitu").innerHTML = "giai bon " + giaitu;
+                        break;
+                    case giainam:
+                        document.getElementById("giainam").innerHTML = "giai nam " + giainam;
+                        break;
+                    case giaisau:
+                        document.getElementById("giaisau").innerHTML = "giai sau " + giaisau;
+                        break;
+                    case giaibay:
+                        document.getElementById("giaibay").innerHTML = "giai bay " + giaibay;
+                        break;
+                    default:
+                        document.getElementById("random").innerHTML = "chuc ban may man lan sau ";
+                        break;
                 }
             }
 
-            function getRdInteger(min, max) {
-                let giaidacbiet = Math.floor(Math.random() * (max - min)) + min;
-                let giainhat = Math.floor(Math.random() * (max - min)) + min;
-                let giainhi = Math.floor(Math.random() * (max - min)) + min;
-                let giaiba = Math.floor(Math.random() * (max - min)) + min;
-                let giaitu = Math.floor(Math.random() * (max - min)) + min;
-                let giainam = Math.floor(Math.random() * (max - min)) + min;
-                let giaisau = Math.floor(Math.random() * (max - min)) + min;
-                let giaibay = Math.floor(Math.random() * (max - min)) + min;
-
-                let result = [giaidacbiet, giainhat, giainhi, giaiba, giaitu, giainam, giaisau, giaibay];
-                for (let i = 0; i < result.length; i++) {
-
-                    let rd = Math.floor(Math.random() * (max - min)) + min;
-                    giai(rd, result[i]);
-                    // if (rd == result[i]) {
-                    //     rd = Math.floor(Math.random() * (max - min)) + min;
-                    //     return rd;
-                    // }
-                    switch (rd) {
-                        case giaidacbiet:
-                            document.getElementById("giaidacbiet").innerHTML = "giai dac biet " + giaidacbiet;
-                            break;
-                        case giainhat:
-                            document.getElementById("giainhat").innerHTML = "giai nhat " + giainhat;
-                            break;
-                        case giainhi:
-                            document.getElementById("giainhi").innerHTML = "giai nhi " + giainhi;
-                            break;
-                        case giaiba:
-                            document.getElementById("giaiba").innerHTML = "giai ba " + giaiba;
-                            break;
-                        case giaitu:
-                            document.getElementById("giaitu").innerHTML = "giai bon " + giaitu;
-                            break;
-                        case giainam:
-                            document.getElementById("giainam").innerHTML = "giai nam " + giainam;
-                            break;
-                        case giaisau:
-                            document.getElementById("giaisau").innerHTML = "giai sau " + giaisau;
-                            break;
-                        case giaibay:
-                            document.getElementById("giaibay").innerHTML = "giai bay " + giaibay;
-                            break;
-                        default:
-                            document.getElementById("random").innerHTML = "chuc ban may man lan sau ";
-                            break;
-                    }
-                }
-
-            }
+        }
     </script>
 </body>
 
