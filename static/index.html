@@ -10,7 +10,55 @@
 </head>
 
 <body>
+    <p id="random"></p>
+    <p id="result"></p>
+    <button onclick="getRdInteger(1,9)">Click me</button>
     <script>
+        function getRdInteger(min, max) {
+            let giaidacbiet = Math.floor(Math.random() * (max - min)) + min;
+            let giainhat = Math.floor(Math.random() * (max - min)) + min;
+            let giainhi = Math.floor(Math.random() * (max - min)) + min;
+            let giaiba = Math.floor(Math.random() * (max - min)) + min;
+            let giaitu = Math.floor(Math.random() * (max - min)) + min;
+            let giainam = Math.floor(Math.random() * (max - min)) + min;
+            let giaisau = Math.floor(Math.random() * (max - min)) + min;
+            let giaibay = Math.floor(Math.random() * (max - min)) + min;
+
+            let result = [giaidacbiet, giainhat, giainhi, giaiba, giaitu, giainam, giaisau, giaibay];
+            for (i = 0; i < 9; i++) {
+                let rd = Math.floor(Math.random() * (max - min)) + min;
+                switch (rd) {
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai dac biet";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai nhat";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai nhi";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai ba";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai bon";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai nam";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai sau";
+                        break;
+                    case Math.floor(Math.random() * (max - min)) + min:
+                        document.getElementById("random").innerHTML = "giai bay";
+                        break;
+                    default:
+                        document.getElementById("random").innerHTML = "chuc ban may man lan sau";
+                        break;
+                }
+            }
+
+        }
     </script>
 </body>
 
