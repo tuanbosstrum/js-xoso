@@ -12,53 +12,75 @@
 <body>
     <p id="random"></p>
     <p id="result"></p>
+    <p id="giaidacbiet"></p>
+    <p id="giainhat"></p>
+    <p id="giainhi"></p>
+    <p id="giaiba"></p>
+    <p id="giaitu"></p>
+    <p id="giainam"></p>
+    <p id="giaisau"></p>
+    <p id="giaibay"></p>
     <button onclick="getRdInteger(1,9)">Click me</button>
     <script>
-        function getRdInteger(min, max) {
-            let giaidacbiet = Math.floor(Math.random() * (max - min)) + min;
-            let giainhat = Math.floor(Math.random() * (max - min)) + min;
-            let giainhi = Math.floor(Math.random() * (max - min)) + min;
-            let giaiba = Math.floor(Math.random() * (max - min)) + min;
-            let giaitu = Math.floor(Math.random() * (max - min)) + min;
-            let giainam = Math.floor(Math.random() * (max - min)) + min;
-            let giaisau = Math.floor(Math.random() * (max - min)) + min;
-            let giaibay = Math.floor(Math.random() * (max - min)) + min;
-
-            let result = [giaidacbiet, giainhat, giainhi, giaiba, giaitu, giainam, giaisau, giaibay];
-            for (i = 0; i < 9; i++) {
-                let rd = Math.floor(Math.random() * (max - min)) + min;
-                switch (rd) {
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai dac biet";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai nhat";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai nhi";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai ba";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai bon";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai nam";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai sau";
-                        break;
-                    case Math.floor(Math.random() * (max - min)) + min:
-                        document.getElementById("random").innerHTML = "giai bay";
-                        break;
-                    default:
-                        document.getElementById("random").innerHTML = "chuc ban may man lan sau";
-                        break;
+        function giaithuong(rd, result) {
+            if (rd == result) {
+                {
+                    rd = Math.floor(Math.random() * (max - min)) + min;
+                    return giai(rd, result);
                 }
             }
 
-        }
+            function getRdInteger(min, max) {
+                let giaidacbiet = Math.floor(Math.random() * (max - min)) + min;
+                let giainhat = Math.floor(Math.random() * (max - min)) + min;
+                let giainhi = Math.floor(Math.random() * (max - min)) + min;
+                let giaiba = Math.floor(Math.random() * (max - min)) + min;
+                let giaitu = Math.floor(Math.random() * (max - min)) + min;
+                let giainam = Math.floor(Math.random() * (max - min)) + min;
+                let giaisau = Math.floor(Math.random() * (max - min)) + min;
+                let giaibay = Math.floor(Math.random() * (max - min)) + min;
+
+                let result = [giaidacbiet, giainhat, giainhi, giaiba, giaitu, giainam, giaisau, giaibay];
+                for (let i = 0; i < result.length; i++) {
+
+                    let rd = Math.floor(Math.random() * (max - min)) + min;
+                    giai(rd, result[i]);
+                    // if (rd == result[i]) {
+                    //     rd = Math.floor(Math.random() * (max - min)) + min;
+                    //     return rd;
+                    // }
+                    switch (rd) {
+                        case giaidacbiet:
+                            document.getElementById("giaidacbiet").innerHTML = "giai dac biet " + giaidacbiet;
+                            break;
+                        case giainhat:
+                            document.getElementById("giainhat").innerHTML = "giai nhat " + giainhat;
+                            break;
+                        case giainhi:
+                            document.getElementById("giainhi").innerHTML = "giai nhi " + giainhi;
+                            break;
+                        case giaiba:
+                            document.getElementById("giaiba").innerHTML = "giai ba " + giaiba;
+                            break;
+                        case giaitu:
+                            document.getElementById("giaitu").innerHTML = "giai bon " + giaitu;
+                            break;
+                        case giainam:
+                            document.getElementById("giainam").innerHTML = "giai nam " + giainam;
+                            break;
+                        case giaisau:
+                            document.getElementById("giaisau").innerHTML = "giai sau " + giaisau;
+                            break;
+                        case giaibay:
+                            document.getElementById("giaibay").innerHTML = "giai bay " + giaibay;
+                            break;
+                        default:
+                            document.getElementById("random").innerHTML = "chuc ban may man lan sau ";
+                            break;
+                    }
+                }
+
+            }
     </script>
 </body>
 
