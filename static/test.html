@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>3s-random project</title>
 </head>
 
 <body>
+    <p id="giaidacbiet"></p>
+    <p id="giainhat"></p>
+    <p id="giainhi"></p>
+    <p id="giaiba"></p>
+    <p id="giaitu"></p>
+    <p id="giainam"></p>
+    <p id="giaisau"></p>
+    <p id="giaibay"></p>
+
+    <button onclick="checkrand()">check</button>
+    <button onclick="addrand()">Add</button>
+    <button onclick="output()">Click me</button>
+    <button onclick="checkve()">Ve random</button>
     <script>
+        let rads = [];
+
+        function checkrand() {
+            let rand = Math.floor(Math.random() * 50);
+            if (!rads.includes(Math.floor(Math.random() * 50))) {
+                rads.push(rand);
+            } else {
+                checkrand();
+            }
+        }
     </script>
-    <button id="spin">Spin</button>
-    <span class="arrow"></span>
-    <div class="container">
-        <div class="random one">1</div>
-        <div class="random two">2</div>
-        <div class="random three">3</div>
-        <div class="random four">4</div>
-        <div class="random five">5</div>
-        <div class="random six">6</div>
-        <div class="random seven">7</div>
-        <div class="random eight">8</div>
-    </div>
-    <script src="./js/style.js"></script>
 </body>
 
 </html>
