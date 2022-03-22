@@ -12,31 +12,53 @@
 <body>
     <div class="row">
         <div class="container">
-            <table class="result">
+            <table class="result col3">
                 <tr>
+                    <td title="Giải ĐB">ĐB</td>
                     <td>
-                        <p id="giaidacbiet">Giải đặc biệt:</p>
+                        <p id="giaidacbiet"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải nhất">Giải nhất</td>
                     <td>
-                        <p id="giainhat">Giải nhất :</p>
+                        <p id="giainhat"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải nhì">Giải nhì</td>
                     <td>
-                        <p id="giainhi">Giải nhì :</p>
+                        <p id="giainhi"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải ba">Giải ba</td>
                     <td>
-                        <p id="giaiba">Giải ba :</p>
+                        <p id="giaiba"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải tư">Giải tư</td>
                     <td>
-                        <p id="giaitu">Giải tư :</p>
+                        <p id="giaitu"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải năm">Giải năm</td>
                     <td>
-                        <p id="giainam">Giải năm :</p>
+                        <p id="giainam"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải sáu">Giải sáu</td>
                     <td>
-                        <p id="giaisau">Giải sáu:</p>
+                        <p id="giaisau"></p>
                     </td>
+                </tr>
+                <tr>
+                    <td title="Giải bảy">Giải bảy</td>
                     <td>
-                        <p id="giaibay">Giải bảy :</p>
+                        <p id="giaibay"></p>
                     </td>
                 </tr>
             </table>
@@ -72,35 +94,35 @@
             switch (rand) {
                 case rads[0]:
                     console.log("giai dac biet");
-                    document.getElementById("giaidacbiet").innerHTML = " Giải đặc biệt: " + rads[0];
+                    document.getElementById("giaidacbiet").innerHTML = rads[0];
                     break;
                 case rads[1]:
                     console.log("giai nhat");
-                    document.getElementById("giainhat").innerHTML = " Giải nhất  " + rads[1];
+                    document.getElementById("giainhat").innerHTML = rads[1];
                     break;
                 case rads[2]:
                     console.log("giai nhi");
-                    document.getElementById("giainhi").innerHTML = " Giải nhì  " + rads[2];
+                    document.getElementById("giainhi").innerHTML = rads[2];
                     break;
                 case rads[3]:
                     console.log("giai ba");
-                    document.getElementById("giaiba").innerHTML = " Giải ba : " + rads[3];
+                    document.getElementById("giaiba").innerHTML = rads[3];
                     break;
                 case rads[4]:
                     console.log("giai tu");
-                    document.getElementById("giaitu").innerHTML = " Giải tư : " + rads[4];
+                    document.getElementById("giaitu").innerHTML = rads[4];
                     break;
                 case rads[5]:
                     console.log("giai nam");
-                    document.getElementById("giainam").innerHTML = " Giải năm :  " + rads[5];
+                    document.getElementById("giainam").innerHTML = rads[5];
                     break;
                 case rads[6]:
                     console.log("giai sau");
-                    document.getElementById("giaisau").innerHTML = " Giải  sáu : " + rads[6];
+                    document.getElementById("giaisau").innerHTML = rads[6];
                     break;
                 case rads[7]:
                     console.log("giai bay");
-                    document.getElementById("giaibay").innerHTML = " Giải bảy : " + rads[7];
+                    document.getElementById("giaibay").innerHTML = rads[7];
                     break;
                 default:
                     break;
