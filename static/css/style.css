@@ -11,9 +11,34 @@ html {
 
 div {
     display: block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
 }
 
 tbody {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.box-ketqua {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box-ketqua h2 {
+    color: #fff;
+    height: 22px;
+    background-color: #cb0506;
+    font-weight: 700;
+    position: relative;
+}
+
+#rmn {
     border: 0;
     margin: 0;
     padding: 0;
@@ -56,8 +81,11 @@ tbody {
     font-weight: 700;
 }
 
-td {
+td,
+.result td {
     border: 1px solid #666;
+    padding: 4px;
+    line-height: 130% !important;
 }
 
 table {
@@ -65,4 +93,28 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     margin-bottom: 10px !important;
+}
+
+
+/* button */
+
+button {
+    background: #03A9F4 !important;
+    color: white !important;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+button .rand:hover {
+    width: fit-content;
+    padding: 0.5em 1em;
+    text-align: center;
+    float: inherit;
+    margin: 0em auto;
+    color: #ffffff;
+    background: #00000026;
+    border-radius: 25px;
 }
