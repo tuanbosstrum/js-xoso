@@ -12,6 +12,69 @@
 
 <body>
 
+    <section class="border-container">
+        <div class="row">
+            <div class="box-xoso">
+                <table class="container">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h1>#</h1>
+                            </th>
+                            <th>
+                                <h1>Giải</h1>
+                            </th>
+                            <th>
+                                <h1>Số</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ĐB</td>
+                            <td id="giaidacbiet"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>G.1</td>
+                            <td id="giainhat"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>G.2</td>
+                            <td id="giainhi"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>G.3</td>
+                            <td id="giaiba"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>G.4</td>
+                            <td id="giaitu"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>G.5</td>
+                            <td id="giainam"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>G.6</td>
+                            <td id="giaisau"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>G.7</td>
+                            <td id="giaibay"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
     <section id="center-content">
         <div class="row">
             <div class="box-ketqua">
@@ -78,66 +141,7 @@
     <button onclick="addrand(100,200)" id="addrand" class="rand">Quay giải</button>
 
     <button onclick="checkve(100,200)" class="rand">Quay số </button>
-    <script>
-        let rads = [];
-
-        function checkrand(min, max) {
-            let rand = Math.floor((Math.random() * (max - min)) + min);
-            if (!rads.includes(Math.floor(Math.random() * (max - min)) + min)) {
-                rads.push(rand);
-            } else {
-                checkrand(min, max);
-            }
-
-        }
-
-        function addrand(min, max) {
-            for (let i = 0; i < 8; i++) {
-                checkrand(min, max);
-            }
-            document.getElementById("addrand").style.display = "none";
-        }
-
-        function checkve(min, max) {
-            let rand = Math.floor((Math.random() * (max - min)) + min);
-            switch (rand) {
-                case rads[0]:
-                    console.log("giai dac biet");
-                    document.getElementById("giaidacbiet").innerHTML = rads[0];
-                    break;
-                case rads[1]:
-                    console.log("giai nhat");
-                    document.getElementById("giainhat").innerHTML = rads[1];
-                    break;
-                case rads[2]:
-                    console.log("giai nhi");
-                    document.getElementById("giainhi").innerHTML = rads[2];
-                    break;
-                case rads[3]:
-                    console.log("giai ba");
-                    document.getElementById("giaiba").innerHTML = rads[3];
-                    break;
-                case rads[4]:
-                    console.log("giai tu");
-                    document.getElementById("giaitu").innerHTML = rads[4];
-                    break;
-                case rads[5]:
-                    console.log("giai nam");
-                    document.getElementById("giainam").innerHTML = rads[5];
-                    break;
-                case rads[6]:
-                    console.log("giai sau");
-                    document.getElementById("giaisau").innerHTML = rads[6];
-                    break;
-                case rads[7]:
-                    console.log("giai bay");
-                    document.getElementById("giaibay").innerHTML = rads[7];
-                    break;
-                default:
-                    break;
-            }
-
-        }
+    <script src="./js/style.js">
     </script>
 </body>
 
