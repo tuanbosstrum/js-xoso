@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -35,77 +39,80 @@
     </nav>
 
     <!-- table -->
-    <section id="center-content">
+    <section id="content">
         <div class="row">
             <div class="box-ketqua">
-                <h2>Kết quả giải thưởng </h2>
-                <table class="container result col3">
-                    <div id="rmn">
-                        <thead>
-                            <tr>
-                                <th>
-                                    <h1>#</h1>
-                                </th>
-                                <th>
-                                    <h1>Giải</h1>
-                                </th>
-                                <th>
-                                    <h1>Số</h1>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>0</td>
-                                <td>ĐB</td>
-                                <td id="giaidacbiet"></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>G.1</td>
-                                <td id="giainhat"></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>G.2</td>
-                                <td id="giainhi"></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>G.3</td>
-                                <td id="giaiba"></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>G.4</td>
-                                <td id="giaitu"></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>G.5</td>
-                                <td id="giainam"></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>G.6</td>
-                                <td id="giaisau"></td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>G.7</td>
-                                <td id="giaibay"></td>
-                            </tr>
-                        </tbody>
+                <div class="col-md-12">
+                    <table class="table table-dark table-hover">
+                        <div id="rmn">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h1>#</h1>
+                                    </th>
+                                    <th>
+                                        <h1>Giải</h1>
+                                    </th>
+                                    <th>
+                                        <h1>Số</h1>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>ĐB</td>
+                                    <td id="giaidacbiet"></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>G.1</td>
+                                    <td id="giainhat"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>G.2</td>
+                                    <td id="giainhi"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>G.3</td>
+                                    <td id="giaiba"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>G.4</td>
+                                    <td id="giaitu"></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>G.5</td>
+                                    <td id="giainam"></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>G.6</td>
+                                    <td id="giaisau"></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>G.7</td>
+                                    <td id="giaibay"></td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </table>
+                    <div id="btn-rand">
+                        <!-- <button onclick="addrand(100,200)" id="addrand" class="rand">Quay giải</button>
+                        <button onclick="checkve(100,200)" class="rand">Quay số </button> -->
+                        <button class="btn btn-danger" onclick="add()" id="addrand">Quay giải</button>
+                        <button class="btn btn-primary" onclick="stopRad()">Dừng quay </button>
                     </div>
-                </table>
-                <!-- <button onclick="addrand(100,200)" id="addrand" class="rand">Quay giải</button>
-                <button onclick="checkve(100,200)" class="rand">Quay số </button> -->
-                <button class="btn btn-danger" onclick="add()" id="addrand">Quay giải</button>
-                <button class="btn btn-primary" onclick="stopRad()">Dừng quay </button>
+                </div>
+
             </div>
         </div>
     </section>
-
     <script src="./js/calendar.js"></script>
     <script src="./js/style.js">
     </script>

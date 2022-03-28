@@ -99,17 +99,23 @@ tbody {
     font-size: 100%;
 }
 
-#center-content {
-    font-size: 13px;
+#content {
+    background-image: url("../img/background.jpg");
+    position: absolute;
+    background-size: cover;
+    padding: 500px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.row {
+#content .row {
     float: left;
     width: 100%;
     box-sizing: border-box;
 }
 
-.container {
+#content .container {
     width: 100%;
     border-top: 0;
     float: left;
@@ -145,12 +151,17 @@ td,
 table {
     display: table;
     border-spacing: 0;
+    padding-top: 25px;
     border-collapse: collapse;
     margin-bottom: 10px !important;
 }
 
 
 /* button */
+
+btn-rand {
+    text-align: center;
+}
 
 button {
     background: #03A9F4 !important;
