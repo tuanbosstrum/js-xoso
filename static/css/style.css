@@ -17,6 +17,9 @@ div {
     font-size: 100%;
 }
 
+
+/* menu */
+
 nav {
     background: #0082e682;
     height: 80px;
@@ -70,6 +73,9 @@ a:hover {
     display: none;
 }
 
+
+/* table */
+
 tbody {
     border: 0;
     margin: 0;
@@ -94,8 +100,8 @@ tbody {
 
 #rmn {
     border: 0;
-    margin: 0;
-    padding: 0;
+    margin: 11px;
+    padding: 21px;
     font-size: 100%;
 }
 
@@ -113,6 +119,16 @@ tbody {
     float: left;
     width: 100%;
     box-sizing: border-box;
+}
+
+#content .col-md-12 {
+    background-color: rgb(170, 158, 158);
+    border-radius: 10px;
+    width: 60%;
+    height: 690px;
+    text-align: center;
+    margin-top: -211px;
+    margin-left: 365px;
 }
 
 #content .container {
@@ -159,11 +175,11 @@ table {
 
 /* button */
 
-btn-rand {
+#btn-rand {
     text-align: center;
 }
 
-button {
+#btn-rand button {
     background: #03A9F4 !important;
     color: white !important;
     border-radius: 25px;
@@ -173,7 +189,7 @@ button {
     justify-content: center;
 }
 
-button .rand:hover {
+#btn-rand .rand:hover {
     width: fit-content;
     padding: 0.5em 1em;
     text-align: center;
