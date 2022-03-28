@@ -2,7 +2,11 @@
     padding: 0px;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -92,10 +96,9 @@ a:hover {
 
 /* liên hệ */
 
-.footer-top,
-.footer-bottom {
+.footer-top {
     background-color: #17a2b8;
-    height: 100px;
+    height: 140px;
 }
 
 .footer-top .container p {
@@ -103,6 +106,11 @@ a:hover {
     color: #fff;
     font-weight: 200px;
     font-size: 20px;
+}
+
+.footer-bottom {
+    background-color: #17a2b8;
+    height: 120px;
 }
 
 .footer-bottom p {
