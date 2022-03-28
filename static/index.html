@@ -7,29 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+
     <title>3s-random project</title>
 </head>
 
 <body>
-    <div class="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+    <section id="nav">
+        <div class="row">
+            <div class="container-nav">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                  <i class="ti ti-check"></i>
+                </label>
+                    <label class="logo">RandomX</label>
                     <ul>
-
+                        <li><a class="active" href="#">Trang chủ</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Giải trí</a></li>
+                        <li><a href="#">Nhãn hiệu</a></li>
+                        <li><a href="#">Quảng cáo</a></li>
+                        <li><a href="#">Hợp tác</a></li>
                     </ul>
-                </div>
-                <div class="col-md-9">
-                    <ul>
-                        <li><input type="text" placeholder="số tài khoản"></li>
-                        <li><input type="text" placeholder="mật khẩu"></li>
-                        <li><button type="button" class="btn btn-danger">Đăng nhập</button></li>
-                        <li><button type="button" class="btn btn-danger">Đăng kí</button></li>
-                    </ul>
-                </div>
+                </nav>
             </div>
         </div>
-    </div>
+    </section>
 
     <section id="center-content">
         <div class="row">
@@ -94,13 +97,14 @@
                         </tbody>
                     </div>
                 </table>
+                <button onclick="addrand(100,200)" id="addrand" class="rand">Quay giải</button>
+                <button onclick="checkve(100,200)" class="rand">Quay số </button>
             </div>
         </div>
+
     </section>
 
-    <button onclick="addrand(100,200)" id="addrand" class="rand">Quay giải</button>
 
-    <button onclick="checkve(100,200)" class="rand">Quay số </button>
     <script src="./js/calendar.js"></script>
     <script src="./js/style.js">
     </script>
