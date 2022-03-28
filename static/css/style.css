@@ -114,6 +114,19 @@ a:hover {
     display: none;
 }
 
+
+/* table */
+
+.content {
+    background-image: url(../img/background.jpg);
+    position: absolute;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 tbody {
     border: 0;
     margin: 0;
