@@ -29,7 +29,6 @@ function rand() {
     document.getElementById("giaibay").innerHTML =
         Math.floor(Math.random() * (200 - 100)) + 100; */
 
-
     switch (key) {
         case 1:
             var db = Math.floor(Math.random() * (300 - 100)) + 100;
