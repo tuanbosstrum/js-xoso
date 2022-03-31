@@ -4,6 +4,9 @@ var key = 0;
 function add() {
     key++;
     numrad = setInterval(rand, 100);
+    if (key >= 9) {
+        document.getElementById("addrand").style.display = "none";
+    }
 
 }
 
@@ -31,13 +34,11 @@ function rand() {
         case 1:
             var db = Math.floor(Math.random() * (300 - 100)) + 100;
             document.getElementById("giaidacbiet").innerHTML = db;
-
             break;
         case 2:
             var gn = Math.floor(Math.random() * (300 - 100)) + 100;
             document.getElementById("giainhat").innerHTML =
                 Math.floor(Math.random() * (300 - 100)) + 100;
-
             break;
         case 3:
             document.getElementById("giainhi").innerHTML =
