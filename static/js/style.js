@@ -62,7 +62,6 @@ function rand() {
         case 8:
             document.getElementById("giaibay").innerHTML =
                 Math.floor(Math.random() * (300 - 100)) + 100;
-            document.getElementById("message").innerHTML = "Chúc mừng bạn đã trúng giải đặc biệt";
             break;
 
         default:
